@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/contenedor"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_200">
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imagen"
+            android:layout_toRightOf="@+id/imagen"
+            android:hint="nombre de la bicicleta"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/empresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre"
+            android:layout_toEndOf="@+id/imagen"
+            android:layout_toRightOf="@+id/imagen"
+            android:hint="empresa"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empresa"
+            android:layout_toEndOf="@id/imagen"
+            android:layout_toRightOf="@id/imagen"
+            android:hint="precio"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/año"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precio"
+            android:layout_toEndOf="@id/imagen"
+            android:layout_toRightOf="@id/imagen"
+            android:hint="año"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
